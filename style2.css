@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    background-color: rgb(163, 163, 163);
+    justify-content: center;
+    align-items: center;
+    margin: 1em; 
+}
+
+form {
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 35em;
+    height: auto;
+    background-color: rgb(102, 148, 80);
+    border-radius: 3%;
+    border: 3px solid;
+    flex-direction: column;
+    display: flex;
+    padding: 1.7em;
+    box-sizing: border-box; 
+}
+
+h2 {
+    padding-left: 0; 
+    text-align: center; 
+    margin-bottom: 1em; 
+}
+
+div {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label {
+    display: block; 
+    margin-bottom: 0.5em; 
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1em; 
+    box-sizing: border-box;
+}
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <form method="get">
+        <div class="main">
+            <h2>Step 1: Your details</h2>
+            <div>
+                <label for="name2">Name:</label>
+                <input type="text" id="name2" name="name" placeholder="First and lastname">
+            </div>
+            <div>
+                <label for="email2">Email:</label>
+                <input type="email" id="email2" name="email" placeholder="example@пьфшд.com" pattern="^(\w{5,}@)(([a-z]|[A-Z]){3,5})(\.[a-z]{2,5})$">
+            </div>
+            <div>
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+380679857432" pattern="^(\+\d{2}-\d{3}-\d{3}-\d{2}-\d{2})|(\d{2}\d{3}\d{3}\d{2}\d{2})$">
+            </div>
+
+            <h2>Step 2: Delivery address</h2>
+            <div>
+                <textarea id="address" name="address" rows="4" cols="30" placeholder="Address"></textarea>
+            </div>
+            <div>
+                <label for="code">Post code:</label>
+                <input type="text" id="code" name="code" pattern="\d{4}">
+            </div>
+            <div>
+                <label for="country2">Country:</label>
+                <input type="text" id="country2" name="country">
+            </div>
+
+            <h2>Step 3: Card details</h2>
+            <div>
+                <label>Card type:</label>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" height="40px" width="50px">
+                <input type="radio" id="mastercard" name="cardt">
+                <img src="https://w7.pngwing.com/pngs/20/987/png-transparent-logo-visa-credit-card-business-visa-text-trademark-payment.png" height="40px" width="50px">
+                <input type="radio" id="visa" name="cardt">
+                <img src="https://w7.pngwing.com/pngs/711/297/png-transparent-logo-american-express-payment-computer-icons-brand-american-express-blue-text-rectangle.png" height="40px" width="50px">
+                <input type="radio" id="amer" name="cardt">
+            </div>
+            <div>
+                <label for="cardn">Card number:</label>
+                <input type="text" id="cardn" name="cardn" pattern="^\d{4}-\d{4}-\d{4}-\d{4}$" placeholder="xxxx-xxxx-xxxx-xxxx">
+            </div>
+            <div>
+                <label for="cards">CVV2 code:</label>
+                <input type="text" id="cards" name="cards" pattern="^\d{3}$">
+            </div>
+            <div>
+                <label for="cardname">Card name:</label>
+                <input type="text" id="cardname" name="cardname">
+            </div>
+            <button><h2>Buy it!</h2></button>
+        </div>
+    </form>
+</body>
+</html>

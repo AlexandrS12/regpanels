@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        img{
+            width: 10em;
+            height: 10em;
+            border-radius: 50%;
+        }
+        .fr{
+            padding-top: 5em;
+            padding-left: 1em;
+        }
+        .forms{
+            padding: 0.2em;
+            padding-left: 1em;
+            padding-top: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="main">
+        <div class="left">
+            <div class="pic">
+                <img src="1.png">
+            </div>
+            <div class="reg">
+                <p>Registration</p>
+            </div>
+        </div>
+
+        <div class="left" >
+            <form method="get">
+                <div class="fr">
+                    <input type="text" id="name" name="name" placeholder="Name:">
+                </div>
+                
+                <div class="forms"> 
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <div class="forms">
+                    <input type="email" id="email" placeholder="E-mail:" name="email" pattern="^(\w{5,}@)(([a-z]|[A-Z]){3,5})(\.[a-z]{2,5})$">
+                </div>
+                <div class="forms">
+                    <label for="country">Country:</label>
+                    <select id="country">
+                        <option value="odessa">Ukraine</option>
+                        <option value="kiev">Bolgaria</option>
+                        <option value="kiev">USA</option>
+                        <option value="kiev">France</option>
+                        <option value="kiev">Poland</option>
+                    </select>
+
+                </div>
+                <div style="margin-left: 0em;" class="forms">
+                    <input style="width: 70%;" type="submit" value="Send">
+                </div>
+                
+                
+
+
+                
+            </form>
+
+        </div>
+    </div>
+
+
+
+
+
+</body>
+</html>
